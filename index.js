@@ -36,8 +36,8 @@ app.get('/new', (req, res) => {
 
 // Route to handle form submission (POST /new)
 app.post('/new', (req, res) => {
-  const messageText = req.body.messageText;
-  const messageUser = req.body.messageUser;
+  const messageText = req.body.author;
+  const messageUser = req.body.message;
 
   // Add new message to messages array
   messages.push({
